@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html land="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compaiable" content="IE=edge">
+        <meta name="viewport" content ="width =device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script
+        var head;
+        class Node{
+            constructor(d){
+                this.data =d;
+                this.link =null;
+            }
+        }
+        var head =new Node(1);
+        var second= new Node(4);
+        var third = new Node(3);
+        head.next= second;
+        second.next = third;
+        third.next = null;
+        while(head!=null){
+            console.log(head.data+" ");
+            head= head.next;
+        }
+    </script>
+    </body>
+    </html>
+    
